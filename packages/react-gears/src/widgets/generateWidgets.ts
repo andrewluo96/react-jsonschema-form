@@ -2,6 +2,7 @@ import CheckboxWidget from './CheckboxWidget';
 import CheckboxesWidget from './CheckboxesWidget';
 import DateWidget from './DateWidget';
 import { FormContextType, RegistryWidgetsType, RJSFSchema, StrictRJSFSchema } from '@rjsf/utils';
+import SelectWidget from './SelectWidget';
 
 export function generateWidgets<
   T = any,
@@ -12,6 +13,7 @@ export function generateWidgets<
     CheckboxWidget,
     CheckboxesWidget,
     DateWidget,
+    SelectWidget,
   };
 }
 

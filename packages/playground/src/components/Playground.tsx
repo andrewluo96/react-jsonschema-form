@@ -158,8 +158,13 @@ export default function Playground({ themes, validators }: PlaygroundProps) {
                   <link rel='stylesheet' id='theme' href={stylesheet || ''} />
                   <link
                     rel='stylesheet'
-                    href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css'
+                    href='https://public.cdn.appfolio.com/public/icons/font-awesome/6.2.0/css/all.min.css'
                   />
+                  <link
+                    rel='stylesheet'
+                    href='https://public.cdn.appfolio.com/public/icons/font-awesome/6.2.0/css/sharp-solid.min.css'
+                  />
+                  <link href='https://use.typekit.net/uao7jmm.css' rel='stylesheet' />
                 </>
               }
               style={{

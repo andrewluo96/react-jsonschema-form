@@ -25,20 +25,18 @@ export default function DateWidget<T = any, S extends StrictRJSFSchema = RJSFSch
   const _onFocus = ({ target: { value } }: FocusEvent<HTMLInputElement>) => onFocus(id, value);
 
   return (
-    <>
-      <DateInput
-        id={id}
-        className='mb-1'
-        placeholder={placeholder}
-        required={required}
-        // @ts-expect-error todo: TS2322: Type 'string | false | ReactElement<any, string | JSXElementConstructor<any>> | undefined' is not assignable to type 'string | undefined'.
-        label={labelValue(label, hideLabel)}
-        onChange={onChange}
-        onBlur={_onBlur}
-        onFocus={_onFocus}
-        value={value}
-        aria-describedby={ariaDescribedByIds<T>(id)}
-      />
-    </>
+    <DateInput
+      id={id}
+      className='mb-1'
+      placeholder={placeholder}
+      required={required}
+      // @ts-expect-error todo: TS2322: Type 'string | false | ReactElement<any, string | JSXElementConstructor<any>> | undefined' is not assignable to type 'string | undefined'.
+      label={labelValue(label, hideLabel)}
+      onChange={onChange}
+      onBlur={_onBlur}
+      onFocus={_onFocus}
+      value={value}
+      aria-describedby={ariaDescribedByIds<T>(id)}
+    />
   );
 }
