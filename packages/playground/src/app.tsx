@@ -97,7 +97,7 @@ const themes: PlaygroundProps['themes'] = {
     theme: Bootstrap4Theme,
   },
   'react-gears': {
-    stylesheet: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css',
+    stylesheet: 'https://appfolio.github.io/bootstrap-coastline/bootstrap-coastline.css',
     theme: ReactGearsTheme,
   },
   'chakra-ui': {
